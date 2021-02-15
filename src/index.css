@@ -3,19 +3,12 @@
 :root{
   --primary: #21afc2;
   --secondary: #4e4e4e;
-  --error: #ff4a4a;
 }
 
-/* base styles & title */
 body{
   font-family: "Brygada 1918";
   color: var(--secondary);
 }
-
-/* .App{
-  max-width: 960px;
-  margin: 0 auto;
-} */
 
 .title h1{
   color: var(--primary);
@@ -25,50 +18,21 @@ body{
   text-align: center;
 
 }
-.title h2, .title p{
-  text-align: center;
-}
+
 .title h2{
   margin-top: 60px;
   font-size: 2.6rem;
+  text-align: center;
+
 }
 
-label input{
-  height: 0;
-  width: 0;
-  opacity: 0;
-}
-label{
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: 1px solid var(--primary);
-  border-radius: 50%;
-  margin: 10px auto;
-  line-height: 30px;
-  color: var(--primary);
-  font-weight: bold;
-  font-size: 24px;
-}
-label:hover{
-  background: var(--primary);
-  color: white;
-}
-.output{
-  height: 60px;
-  font-size: 0.8rem;
-}
-.error{
-  color: var(--error);
-}
-
-/* image grid styles */
 .img-grid{
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
 .img-wrap{
   overflow: hidden;
   height: 0;
@@ -76,6 +40,7 @@ label:hover{
   position: relative;
   opacity: 0.7;
 }
+
 .img-wrap img{
   min-width: 100%;
   min-height: 100%;
@@ -85,7 +50,6 @@ label:hover{
   left: 0;
 }
 
-/* backdrop styles */
 .backdrop{
   position: fixed;
   top: 0;
