@@ -14,7 +14,7 @@ function App() {
   // I have added a conditional rendering to "Backdrop" component 
   // so only when an image is selected it will take over the screen (when selected image has a value)
   return (
-    <div className="App">
+    <div>
       <Title />
       <DataFetching setSelectedImage={setSelectedImage} />
       { selectedImage && <BackDrop selectedImage={selectedImage} setSelectedImage={setSelectedImage} />}
